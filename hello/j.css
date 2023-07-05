@@ -1,0 +1,10 @@
+*{
+    margin-left: 31px;
+}
+li:hover{
+    display: inline-block;
+    color: aqua;
+    margin-left: 31px;
+    border:  solid orange;
+    border-radius: 20px;
+}

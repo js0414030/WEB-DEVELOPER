@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box; 
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            font-size: 28px;
+            text-align: center;
+        }
+        .flex-item-1{
+            background-color: blue;
+            padding: 10px;
+            flex: 50%;
+        }
+        .flex-item-r{
+            background-color: red;
+            padding: 10px;
+            flex: 50%;
+        }
+        @media (min-width:320px) and (max-width:670px){
+            .flex-container{
+                flex-direction: column;
+            }
+
+        }
+        @media (max-width:801px){
+            .flex-container{
+                flex-direction: column;    /* when making the screen short item1 and 2 occurs below each other*/
+            }
+            .flex-item-1{
+                background-color: gray;
+            }
+            .flex-item-r{
+                background-color: orange;/* colour changes while shorting*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>this is the example of responsive</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vitae suscipit perferendis numquam nostrum iure sit mollitia sint nobis beatae ab, ex reprehenderit quos consectetur possimus odit corrupti doloremque vel et. Numquam, distinctio facere ut pariatur enim, dignissimos delectus provident iure ratione asperiores illum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur numquam repudiandae iure nostrum odio incidunt culpa quos, nam maxime quasi quae aut totam!</p>
+    <div class="flex-container">
+        <div class="flex-item-1">item1</div>
+        <div class="flex-item-r">item2</div>
+    </div>
+</body>
+</html>

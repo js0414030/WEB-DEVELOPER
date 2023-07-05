@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators in Javascript</title>
+</head>
+<body>
+
+    <p id="addition">x+y = </p>
+    <p id="subtraction">x-y = </p>
+    <p id="multiplication">x*y = </p>
+    <p id="division">x/y = </p>
+    <p id="modulus">x%y = </p>
+    <p id="exponential">x**y = </p>
+    <p id="is equal">x==y = </p>
+    <p id="is unequal">x!=y = </p>
+    <p id="is greater">x>y = </p>
+    <p id="is smaller"> y>x = </p>
+    <p id="floor division"> y//x = </p>
+  
+    
+    <script>
+        
+        let x = 5, y = 8;
+        z = x+y;
+        document.getElementById("addition").innerHTML +=z;
+
+        z = y-x;
+        document.getElementById("subtraction").innerHTML +=z;
+
+        z = y*x;
+        document.getElementById("multiplication").innerHTML +=z;
+        
+        z = y/x;
+        document.getElementById("division").innerHTML +=z;
+
+        z = y%x;
+        document.getElementById("modulus").innerHTML +=z;
+
+        z = y**x;
+        document.getElementById("exponential").innerHTML +=z;
+
+        z = y==x;
+        document.getElementById("is equal").innerHTML +=z;
+
+        z = y!=x;
+        document.getElementById("is unequal").innerHTML +=z;
+
+        z = x>y;
+        document.getElementById("is greater").innerHTML +=z;
+
+        z = x<y;
+        document.getElementById("is smaller").innerHTML +=z;
+        
+        z = y//x;
+        document.getElementById("floor division").innerHTML +=z;
+        
+    </script>
+</body>
+</html>

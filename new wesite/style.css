@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+   /* background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75),url("https://images.pexels.com/photos/610293/pexels-photo-610293.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200"));/*it will add colour layer over the image*/
+   background-image: url("https://images.pexels.com/photos/610293/pexels-photo-610293.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200");
+    background-size: cover;
+    background-position:fixed;
+}
+/*to move from left to right*/
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+     display: inline-block;
+     margin: 0 20px;
+     position: relative;
+}
+/*to make from blue to white*/
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    /*width: 100%;*/
+    width: 0;/*when we take this the underling disappear*/
+    background: #009688;
+    border-radius: 20%;
+    position: absolute;
+    left : 0;/*due to which the line moves from left to right*/
+    bottom: -10px;
+    transition: 0.5s;/*on clicking underline comes*/
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar ul li:hover{
+
+    padding: 0;
+    scale: 1.5;   /*content bump dut to this*/
+    color: aqua;
+    
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+
+    
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+/*while taking type we did not need to take .*/
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid orange;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;/*due to this the flow is inside the border only*/
+    text-transform: uppercase;
+
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1; /*the watch here shows now by apply this line it comes in front of the colour*/
+    transition: 0.6s;
+}
+
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    bottom: none;
+}
+h1:hover{
+    color: orange;
+    border: 2px solid;
+    border-color: #009688;
+    padding: 30px;
+    
+}

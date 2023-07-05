@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            /*flex-direction: column-reverse;*/
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background-color: royalblue;
+            max-width: 50%;
+            margin-left: 20rem;
+        }
+        .container div{
+            background-image: url('https://cdn.pixabay.com/photo/2015/03/05/01/46/sailing-ship-659758_960_720.jpg');
+            background-position: center;
+            margin: 10px;
+            padding: 20px;
+            font-style: 25px;
+            cursor: pointer;
+            border-radius: 40%;
+            display: flex;
+            justify-content: center;
+
+        }
+        body{
+            height: 100vh;
+            background-color: antiquewhite ;
+            background-size: cover;
+            background-position: center;
+            min-height: 2342px;
+            width: 100%;
+        }
+
+        div:hover{
+            color: blue;
+        }
+        
+        h1{
+            display: flex;
+            justify-content: center;
+            background-color: blue;
+            border-radius: 30rem;
+            color: bisque;
+            font-size: 2.2rem;
+          }
+
+          body img{
+            margin-bottom: 1234px;
+            size: 234px 342px;
+            border-radius: 20px;
+            
+            display: flex;
+            justify-content: center;
+          }
+    </style>
+</head>
+<body>
+    <h1>flex example</h1>
+    <img src='https://cdn.pixabay.com/photo/2015/03/05/01/46/sailing-ship-659758_960_720.jpg' alt="">
+    <div class="container">
+        
+        <div>1</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
