@@ -22,3 +22,5 @@ print(l1)
 
 list.clear()
 print(list)
+
+print("hello here i am")
